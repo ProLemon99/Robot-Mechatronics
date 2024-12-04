@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="levin.shao"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-05 02:51:18 PM"/>
+        <attribute name="created" value="bGV2aW4uc2hhbzsgMDRDRjRCQjJDODExUDsgMjAyNC0wNC0wMzsgMTI6MjI6MTcgUE07IDMxNTc="/>
+        <attribute name="edited" value="bGV2aW4uc2hhbzsgMDRDRjRCQjJDODExUDsgMjAyNC0wNC0wNTsgMDI6NTE6MTggUE07IDMxNjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MotorSpeed" type="Integer" array="False" size="" variables="MotorSpeed"/>
+            <input variable="MotorSpeed"/>
+            <output expression="&quot;MoveForward 50cm&quot;"/>
+            <output expression="&quot;TurnRight 90degrees&quot;"/>
+            <output expression="&quot;MoveForward 50cm&quot;"/>
+            <output expression="&quot;TurnRight 90degrees&quot;"/>
+            <output expression="&quot;MoveForward 39cm&quot;"/>
+            <output expression="&quot;TurnRight 90degrees&quot;"/>
+            <output expression="&quot;MoveForward 58cm&quot;"/>
+            <output expression="&quot;MoveBackward 7cm&quot;"/>
+        </body>
+    </function>
+</flowgorithm>
