@@ -14,7 +14,7 @@ https://education.lego.com/en-us/support/mindstorms-ev3/building-instructions#ro
 from pybricks.hubs import EV3Brick
 from pybricks.ev3devices import Motor
 from pybricks.parameters import Port
-from pybricks.robotics import DriveBase
+from pybricks.robotics import DriveBase # We will not be using any sensors for this project.
 
 # Initialize the EV3 Brick.
 ev3 = EV3Brick()
@@ -26,17 +26,19 @@ right_motor = Motor(Port.C)
 # Initialize the drive base.
 robot = DriveBase(left_motor, right_motor, wheel_diameter=55.5, axle_track=104)
 
-# Go forward and backwards for one meter.
-robot.straight(525)
-ev3.speaker.beep()
-robot.turn(90)
-robot.straight(600)
-robot.turn(90)
-robot.straight(500)
-robot.turn(100)
-robot.straight(580)
-robot.straight(-70)
+# The main code.
+ev3.speaker.beep() # Signal start
 
-ev3.speaker.beep()
+robot.straight(525) # On the way to pick up the blocks.
+robot.turn(90)
+robot.straight(600) # The robot should've picked up the red block while performing this action.
+robot.turn(90)
+robot.straight(500) # The robot should've picked up the yellow block while performing this action.
+robot.turn(100) # Turn a bit more than before to avoid hitting the unwanted blocks.
+robot.straight(580) # Going back to base.
+robot.straight(-70) # The robot will go backwards by a bit to leave the blocks in the box without further interruptions
+
+# Celebration (not necessary)
+ev3.speaker.beep() # Signal end
 ev3.speaker.say("Mission completed successfully")
-ev3.turn(1080)
+ev3.turn(1080) # The robot will spin 3 times to celebrate success

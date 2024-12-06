@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="levin.shao"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-17 02:42:06 PM"/>
+        <attribute name="created" value="bGV2aW4uc2hhbzsgMDRDRjRCQjJDODExUDsgMjAyNC0wNC0wMzsgMTI6MjI6MTcgUE07IDMxNTc="/>
+        <attribute name="edited" value="bGV2aW4uc2hhbzsgMDRDRjRCQTcyQjdEUDsgMjAyNC0wNS0xNzsgMDI6NDI6MDYgUE07IDMxODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MotorSpeed" type="Integer" array="False" size="" variables="MotorSpeed"/>
+            <input variable="MotorSpeed"/>
+            <assign variable="PlaySound" expression="&quot;PlaySound(Beep)&quot;"/>
+            <output expression="&quot;MoveForward 525mm&quot;"/>
+            <output expression="&quot;TurnRight 90degrees&quot;"/>
+            <output expression="&quot;MoveForward 600mm&quot;"/>
+            <output expression="&quot;TurnRight 90degrees&quot;"/>
+            <output expression="&quot;MoveForward 500mm&quot;"/>
+            <output expression="&quot;TurnRight 90degrees&quot;"/>
+            <output expression="&quot;MoveForward 580mm&quot;"/>
+            <output expression="&quot;MoveBackward 70mm&quot;"/>
+            <assign variable="PlaySound" expression="&quot;PlaySound(Beep)&quot;"/>
+            <assign variable="PlayVoice" expression="&quot;PlayVoice(Mission completed successfully)&quot;"/>
+            <output expression="&quot;TurnRight 1080degrees&quot;"/>
+        </body>
+    </function>
+</flowgorithm>
